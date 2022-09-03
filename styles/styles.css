@@ -272,7 +272,7 @@ p {
   background-color: var(--bg-features-icon-color);
 }
 
-/*  WORK  */
+ /* What are we doing  */
 
 .section-title {
   color: var(--primary-title-color);
@@ -293,6 +293,30 @@ p {
   display: flex;
   flex-basis: calc((100% - 60px) / 3);
   column-gap: 30px;
+}
+.picture-work-thumb {
+  position: relative;
+}
+
+.work-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 370px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 /*  TEAM  */
