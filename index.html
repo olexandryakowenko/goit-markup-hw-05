@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <!-- Site header -->
+    <!-- Site-header -->
 
     <header class="top">
       <div class="container">
@@ -66,11 +66,13 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button-modal" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
-      <!-- Our achievements -->
+      <!-- Features -->
 
       <section class="features section">
         <div class="container">
@@ -355,7 +357,7 @@
           </ul>
         </div>
       </section>
-      <!-- Постійні клієнти -->
+      <!-- Clients -->
 
       <section class="clients section">
         <div class="container">
@@ -406,6 +408,17 @@
           </ul>
         </div>
       </section>
+      <!-- Modal-window -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="btn-close-modal" data-modal-close>
+            <svg class="close-icon" width="18px" height="18px">
+              <use href="./images/sprite.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
 
     <!--Footer -->
@@ -474,6 +487,7 @@
         </div>
       </div>
     </footer>
-    <script src="./modal.js"></script>
+    <!-- script-modal-window -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
