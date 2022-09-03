@@ -136,6 +136,18 @@ p {
 }
 .nav-link.current {
   color: var(--accent-color);
+  position: relative;
+}
+.nav-link.current::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 .contact-list {
@@ -148,7 +160,7 @@ p {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-
+  transition: color var(--transition-time);
   color: var(--primary-text-color);
 }
 
