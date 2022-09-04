@@ -637,7 +637,7 @@ p {
 }
 .example-link {
   display: block;
-  transition: box-shadow var(--transition-time-and-function);
+  transition: box-shadow var(--transition-time);
 }
 
 .example-link:hover,
